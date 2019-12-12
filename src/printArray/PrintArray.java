@@ -1,4 +1,5 @@
 package printArray;
+
 //declare and print an array
 public class PrintArray {
     public static void main(String[] args) {
