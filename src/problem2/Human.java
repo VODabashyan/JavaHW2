@@ -49,4 +49,22 @@ public class Human {
         String result = human1.getGender() == 'M' ? "Yes" : "No";
         System.out.println(result);
     }
+
+    static String surnameOfTheOldest(Human human1, Human human2, Human human3) {
+        String result;
+        if (human1.getBirthYear() < human2.getBirthYear()) {
+            if (human1.getBirthYear() < human3.getBirthYear()) {
+                result = human1.getSurname();
+            } else {
+                result = human3.getSurname();
+            }
+        } else {
+            if (human2.getBirthYear() < human3.getBirthYear()) {
+                result = human2.getSurname();
+            } else {
+                result = human3.getSurname();
+            }
+        }
+        return result;
+    }
 }
