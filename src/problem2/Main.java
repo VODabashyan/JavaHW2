@@ -16,5 +16,6 @@ public class Main {
         Human.isMan(hum1);
 
         System.out.println(Human.surnameOfTheOldest(hum1, hum2, hum3));
+        Human.concatenateNames(hum1, hum3);
     }
 }

@@ -67,4 +67,8 @@ public class Human {
         }
         return result;
     }
+
+    static void concatenateNames(Human human1, Human human2) {
+        System.out.println(human1.getName() + " " + human2.getName());
+    }
 }
