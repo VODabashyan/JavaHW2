@@ -31,5 +31,8 @@ public class Main {
 
         float[] array2 = {1.2f, 0.8f, 0.1f, 5.6f};
         System.out.println(FunctionManager.minIndex(array2));
+
+        Human[] humans = {hum1, hum2, hum3};
+        Human.humanSort(humans);
     }
 }

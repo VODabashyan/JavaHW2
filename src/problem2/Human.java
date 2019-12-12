@@ -72,11 +72,33 @@ public class Human {
         System.out.println(human1.getName() + " " + human2.getName());
     }
 
-    static void nameSurname(boolean b, Human human1){
-        if(b == true) {
+    static void nameSurname(boolean b, Human human1) {
+        if (b == true) {
             System.out.println(human1.getName());
         } else {
             System.out.println(human1.getSurname());
+        }
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname + " " + birthYear;
+    }
+
+    static void humanSort(Human[] humans) {
+        Human temp;
+        for (int i = 0; i < humans.length - 1; i++) {
+            for (int j = 0; j < humans.length - 1 - i; j++) {
+                if (humans[j].getBirthYear() > humans[j + 1].getBirthYear()) {
+                    temp = humans[j];
+                    humans[j] = humans[j + 1];
+                    humans[j + 1] = temp;
+                }
+            }
+        }
+
+        for(Human sorted:humans) {
+            System.out.println(sorted.toString());
         }
     }
 }
