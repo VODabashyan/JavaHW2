@@ -9,4 +9,9 @@ public class FunctionManager {
     public double multiply(double x, double y) {
         return x * y;
     }
+
+    public void compareFloats(float x, float y) {
+        String result = x > y ? "Yes" : "No";
+        System.out.println(result);
+    }
 }
