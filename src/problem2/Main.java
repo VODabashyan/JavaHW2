@@ -23,5 +23,10 @@ public class Main {
 
         boolean c = false;
         Human.nameSurname(c, hum1);
+
+        System.out.println();
+
+        int[] array1 = {10, 5, 99, 150, 4, 25};
+        System.out.println(FunctionManager.maxNumber(array1));
     }
 }

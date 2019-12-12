@@ -19,4 +19,15 @@ public class FunctionManager {
         long result = x > y ? (x > z ? x : z) : (y > z ? y : z);
         System.out.println(result);
     }
+
+    static int maxNumber(int[] arr) {
+        int max = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
 }
