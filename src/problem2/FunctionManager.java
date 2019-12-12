@@ -30,4 +30,17 @@ public class FunctionManager {
         }
         return max;
     }
+
+    static int minIndex(float[] arr){
+        int index = 0;
+        float min = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            if(min > arr[i]){
+                min = arr[i];
+                index = i;
+            }
+        }
+        return index;
+    }
 }

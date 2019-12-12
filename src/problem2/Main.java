@@ -28,5 +28,8 @@ public class Main {
 
         int[] array1 = {10, 5, 99, 150, 4, 25};
         System.out.println(FunctionManager.maxNumber(array1));
+
+        float[] array2 = {1.2f, 0.8f, 0.1f, 5.6f};
+        System.out.println(FunctionManager.minIndex(array2));
     }
 }
