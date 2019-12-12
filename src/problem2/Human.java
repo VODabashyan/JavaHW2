@@ -71,4 +71,12 @@ public class Human {
     static void concatenateNames(Human human1, Human human2) {
         System.out.println(human1.getName() + " " + human2.getName());
     }
+
+    static void nameSurname(boolean b, Human human1){
+        if(b == true) {
+            System.out.println(human1.getName());
+        } else {
+            System.out.println(human1.getSurname());
+        }
+    }
 }
